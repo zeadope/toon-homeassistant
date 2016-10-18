@@ -52,14 +52,14 @@ sensor:
 
 
 switch:    
-# The following swith set Toon to "Comfort" with the oncmd and sets Toon to "Sleep" with the offcmd.
+# The following switch set Toon to "Comfort" with the oncmd and sets Toon to "Sleep" with the offcmd.
   - platform: command_line
     switches:
       toon_prog_comfort_sleep:
         oncmd: "python /config/scripts/toonclient.py -C 0 -U <USERNAME> -P <PASSWORD>"
         offcmd: "python /config/scripts/toonclient.py -C 2 -U <USERNAME> -P <PASSWORD>"
 
-# The following swith set Toon to "Home" with the oncmd and sets Toon to "Away" with the offcmd.      
+# The following switch set Toon to "Home" with the oncmd and sets Toon to "Away" with the offcmd.      
   - platform: command_line
     switches:
       toon_prog_home_away:
